@@ -1,0 +1,510 @@
+/************************************************************************************
+RESET
+*************************************************************************************/
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a, br, img, span {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+
+article, footer, header, menu, nav, section {
+    display: block;
+}
+
+/************************************************************************************
+GENERAL STYLING
+*************************************************************************************/
+body {
+    background: url("../img/polygon.jpg");
+    background-size: cover;
+    font: .81em/150% Arial, Helvetica, sans-serif;
+    color: #666;
+}
+a {
+    color: #026acb;
+    text-decoration: none;
+    outline: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+p {
+    margin: 0 0 1.2em;
+    padding: 0;
+}
+
+/* list */
+ul {
+    margin: 1em 0 1.4em 24px;
+    padding: 0;
+    line-height: 140%;
+}
+li {
+    margin: 0 0 .5em 0;
+    padding: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4em;
+    margin: 20px 0 .4em;
+    color: #000;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.6em;
+}
+h3 {
+    font-size: 1.4em;
+}
+h4 {
+    font-size: 1.2em;
+}
+h5 {
+    font-size: 1.1em;
+}
+h6 {
+    font-size: 1em;
+}
+
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+.pagewrap {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+.header {
+    position: relative;
+    height: 200px;
+}
+
+/* site logo */
+.site-logo {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 0px;
+    width: 180px;
+    height: 180px;
+
+}
+
+img.logo-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+/* site description */
+.site-description {
+    width: 70%;
+    height: 100px;
+    line-height: 100%;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font: 5.0em 'Courgette',"Times New Roman", cursive;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+
+/************************************************************************************
+MAIN NAVIGATION
+*************************************************************************************/
+.main-nav {
+    width: 70%;
+    background-color: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+.main-nav li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    position: relative;
+    margin-left: 28px;
+    width: 20%;
+}
+
+.main-nav a {
+    line-height: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    font-size: 1.1em;
+    display: block;
+    padding: 14px 30px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-bottom-right-radius: 90%;
+    border-top-left-radius: 90%;
+    box-shadow: 0px 0px 10px 5px #573021;
+    background-color: #C6B1AE;
+}
+.main-nav a:hover{
+    color: #fff;
+    background: #474747;
+    background: -webkit-gradient(linear, left top, left bottom, from(#EFA76B), to(#BF5703));
+    background: -moz-linear-gradient(top, #EFA76B,  #BF5703);
+    background: linear-gradient(-90deg, #EFA76B, #BF5703);
+}
+
+/************************************************************************************
+THE MAIN BLOCKS WITH CONTENT
+*************************************************************************************/
+.content {
+    background: #fff;
+    margin: 30px 0 30px;
+    padding: 20px 35px 0px;
+    width: 910px;
+    float: left;
+    /* rounded corner */
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    /* box shadow */
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+
+.post-title {
+    margin: 0 0 5px;
+    padding: 0;
+    font: bold 26px/120% Arial, Helvetica, sans-serif;
+    float: left;
+}
+
+/************************************************************************************
+THE FIRST BLOCK
+*************************************************************************************/
+
+.text-section {
+    width: 450px;
+    float: left;
+    height: 16em;
+}
+
+.image-section {
+    margin-right: 30px;
+    width: 350px;
+    float: right;
+}
+
+.image-section > img {
+    width: 350px;
+    height: 13em;
+    box-shadow: 0px 0px 10px 5px #573021;
+}
+
+/************************************************************************************
+THE SECOND BLOCK
+*************************************************************************************/
+    .timeline{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 910px;
+    }
+    .timestamp {
+        margin-bottom: 20px;
+        padding: 0px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 100;
+    }
+
+    .status {
+        padding: 0px 40px;
+        display: flex;
+        justify-content: center;
+        border-top: 2px solid #D6DCE0;
+        position: relative;
+    }
+    h4 {
+        font-weight: 600;
+        word-wrap: break-word;
+    }
+
+    h4::before {
+        content: '';
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        border-radius: 25px;
+        border: 1px solid #ddd;
+        position: absolute;
+        top: -15px;
+        left: 42%;
+    }
+
+
+    li.complete > .status {
+        border-top: 2px solid #66DC71;
+    }
+
+    li.complete  h4::before {
+        background-color: #66DC71;
+        border: none;
+    }
+
+    .edu-img > img {
+        width: 100px;
+        height: 100px;
+    }
+/************************************************************************************
+THE THIRD BLOCK
+*************************************************************************************/
+.flower {
+    float: left;
+    width: 26em;
+    height: 25em;
+}
+
+.petals:before,
+.petals:after,
+.wrapper:after {
+    position: absolute;
+    content: " ";
+    display: block;
+}
+.petals {
+    position: relative;
+    margin: 2em 8em;
+}
+.petals,
+.petals:before,
+.petals:after{
+    width: 12em;
+    height: 5em;
+    background:  lightcyan;
+    box-shadow: 0 0 0px 10px skyblue inset;
+    border-radius: 80% 80% 80% 80%;
+}
+.petals:before {
+    transform: rotate(-120deg);
+    transform-origin: -1em 3em;
+}
+.petals:after {
+    transform: rotate(120deg);
+    transform-origin: -1em 3em;
+}
+.petals:nth-child(2) {
+    position: absolute;
+    top: 0;
+    transform: rotate(180deg);
+    transform-origin: -1em 2em;
+}
+.wrapper {
+    position: relative;
+    top: 8em;
+    left: 6em;
+}
+.wrapper:after {
+    top: 1em;
+    left: 5em;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background: #FFC64E;
+    box-shadow: 0 0 0px 10px gold inset;
+}
+
+.note {
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 5px;
+    font: 1.1em/150% Arial, Helvetica, sans-serif, bold;
+}
+.note-1 {
+    transform: rotate(0deg);
+    top: 25px;
+    left: 170px;
+}
+.note-2 {
+    top: 100px;
+    left: 134px;
+    transform: rotate(60deg);
+
+}
+.note-3 {
+    top: 130px;
+    left: 30px;
+    transform: rotate(300deg);
+    }
+.note-4 {
+      top: 25px;
+      left: -30px;
+      transform: rotate(360deg);
+  }
+.note-5 {
+    top: -50px;
+    left: 30px;
+    transform: rotate(60deg);
+}
+.note-6 {
+    top: -30px;
+    left: 95px;
+    transform: rotate(300deg);
+}
+
+.abilities-block { /* wrapper for flower+notes*/
+    float: right;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    padding: 10px;
+    width: 330px;
+    height: 23.6em;
+}
+
+.abilities-list > li{
+    list-style: none;
+    font: 1.25em/150% Arial, Helvetica, sans-serif, bold;
+}
+.abilities-list li:before{
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-image: url(../img/leaf.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    font: 2em/150% Arial, Helvetica, sans-serif, bold;
+    margin-bottom: -.15em;
+}
+
+/************************************************************************************
+THE FOURTH BLOCK
+*************************************************************************************/
+
+.photo-row {
+    width: 888px;
+    margin: 0 auto;
+    height: 13em;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.photo:first-child,
+.photo:nth-child(2){
+    float: left;
+    margin-right: 5px;
+    width: 296px;
+    min-height: 11em;
+}
+
+.photo:last-child {
+    float: right;
+    width: 270px;
+    min-height: 11em;
+}
+/************************************************************************************
+GRAPHIC POINTERS
+*************************************************************************************/
+
+.graphic-pointer {
+    background: transparent;
+    margin:0;
+    padding: 0px 0px 0px;
+    width: 980px;
+    height: 60px;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+.pointer {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    left: 460px;
+    border-radius: 50%;
+    box-shadow:
+            0 0px 4px 4px #FFC64E,
+            0 0px 4px 4px rgba(0,0,0,.8);
+}
+.pointer:hover {
+    background-color: #EFA76B;
+}
+
+.pointer-edu {
+    background-color: #2ABBAE;
+    background-image: url(../img/icons2.png);
+    background-position: 94.6% 93.0%;
+}
+
+.pointer-skills {
+    background-color: #FFC64E;
+    background-image: url(../img/icons2.png);
+    background-position: 72.35% 64.31%;
+}
+
+.pointer-hobby {
+    background-color: #89CF9B;
+    background-image: url(../img/icons2.png);
+    background-position: 73.3% 36%;
+    background-size: 450px 350px;
+}
+
+.arrow::after {
+    content: '';
+    position: absolute;
+    border: 15px solid transparent;
+    border-top: 15px solid rgba(255,255,255,.5); /* visible triangle */
+}
+.left {
+    position: absolute;
+    left: 410px; bottom: 30px;
+}
+
+.right {
+    position: absolute;
+    left: 540px; bottom: 30px; /*  position of triangle */
+}
+
+.arrow:hover::after {
+    border-top-color: #EFA76B;
+}
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+.footer {
+    clear: both;
+    color: black;
+    font-size: 85%;
+}
+/************************************************************************************
+CLEARFIX
+*************************************************************************************/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix { display: inline-block; }
+.clearfix { display: block; zoom: 1; }
